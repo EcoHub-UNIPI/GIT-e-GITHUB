@@ -57,7 +57,8 @@ Alguns comandos básicos:
   git remote -v
   ````
   Mostra quais repositórios remotos seu repositório local sabe que existem e é apenas para eles, que ele irá enviar ou baixar alterações.
-Mini desafio:
+
+## Mini desafio:
 ````bash
 //Se você não iniciou um repositório Git, rode este comando.
 git init
