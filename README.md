@@ -77,7 +77,7 @@ git fetch origin
 
 //Provavelmente você ainda não tem uma branch local, 
 //então será necessário criar uma. Rode o código abaixo.
-git checkout -b dev origin/main
+git checkout -b dev
 
 //Por fim, faça o pull do repositório remoto para o seu repositório local usando este comando.
 git pull origin main
