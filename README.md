@@ -25,7 +25,7 @@ Em outras palavras:
   - Se tudo ocorrer bem, este comando deve funcionar.
    ```bash
    git --version
-
+   ````
 ## ⚙️ Configurações Básicas do Git
 
 Após instalar o Git, é importante configurar seu nome e e-mail, que ficam registrados em cada commit.
