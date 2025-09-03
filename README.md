@@ -22,6 +22,7 @@ Em outras palavras:
 - De preferência, um vídeo bem explicativo sobre a instalação
 [Gustavo Guanabara - Instalando Git e Github](https://youtu.be/NgWExh3bswg?si=3baPDZ6zOd1kO50g)
 5. Verifique a instalação:
+  - Se tudo ocorrer bem, este comando deve funcionar.
    ```bash
    git --version
 
@@ -45,4 +46,38 @@ Após isso irei apresentar alguns conceitos importantes sobre o GIT.
 
 - Commits: Os commits são basicamente, uma declaração da alteração que você fez, pegando um exemplo bem exótico, quando alguém tem um filho, para confirmar que ele existe, é necessário você precisa registrar ele, assim é o código. Qualquer alteração realizada só irá poder ir para a branch dev ou main, se você realizar um commit.
    - Cada commit possui um HASH, o HASH é o CPF daquele commit, se 2 arquivos tiverem na mesma versão mas tiverem HASH diferentes, eles não são iguais, além disso, o HASH é o identificador/rastreador daquele commit.
-- Staged: O Stage, é onde as alterações irão ficar em uma fila de espera, podendo serem desfeitos ou aceitos, após você registralos ( fazer um commit ) eles irão sair do estado de staged, o mesmo irá acontecer se forem excluídos. 
+- Staged: O Stage, é onde as alterações irão ficar em uma fila de espera, podendo serem desfeitos ou aceitos, após você registralos ( fazer um commit ) eles irão sair do estado de staged, o mesmo irá acontecer se forem excluídos.
+
+Alguns comandos básicos:
+ Importante lembrar que você só irá estar mexendo com o git, se a primeira palavra da linha de comando for: **git**
+- Git pull: Geralmente se refere a atualização do seu código local, chamado também de repositório local.
+- Git push: Se refere a enviar versões do código para algum repositório remoto.
+- Git remote: Gerencia as informações sobre os repositórios remotos, como por exemplo:
+  ````bash
+  git remote -v
+  ````
+  Mostra quais repositórios remotos seu repositório local sabe que existem e é apenas para eles, que ele irá enviar ou baixar alterações.
+Mini desafio:
+````bash
+//Se você não iniciou um repositório Git, rode este comando.
+git init
+
+//O comando acima conecta seu repositório local com o repositório remoto.
+//Se esse comando não funcionar, pode ser que você não tenha permissão para executá-lo. 
+//Verifique o erro que o console retornar.
+git remote add origin git@github.com:Jordlolk/campoGIT.git
+
+//Verifique se o comando foi executado corretamente.
+//Ele deve retornar a URL do repositório remoto.
+git remote -v
+
+//Agora você precisa buscar (fetch) as branches do repositório remoto.
+git fetch origin
+
+//Provavelmente você ainda não tem uma branch local, 
+//então será necessário criar uma. Rode o código abaixo.
+git checkout -b dev origin/dev
+
+//Por fim, faça o pull do repositório remoto para o seu repositório local usando este comando.
+git pull origin dev
+````
