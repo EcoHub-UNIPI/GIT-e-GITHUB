@@ -1,6 +1,3 @@
-# GIT-e-GITHUB
-Esse REP ( repositório) é para ajudar no entendimento do git e github.
-
 # 🌱 Guia Básico de Git
 
 O **Git** é um sistema de controle de versão distribuído, muito usado para gerenciar código-fonte em projetos de software.  
