@@ -16,8 +16,11 @@ Em outras palavras:
 
 2. Escolha a versão compatível com seu sistema operacional (Windows, macOS ou Linux).
 
-3. Siga as instruções do instalador.
+<img width="1322" height="514" alt="image" src="https://github.com/user-attachments/assets/d4bb7cc9-6fa3-414d-ab5c-39081042554a" />
 
-4. Verifique a instalação:
+3. Siga as instruções do instalador.
+- De preferência, um vídeo bem explicativo sobre a instalação
+[Gustavo Guanabara - Instalando Git e Github](https://youtu.be/NgWExh3bswg?si=3baPDZ6zOd1kO50g)
+5. Verifique a instalação:
    ```bash
    git --version
