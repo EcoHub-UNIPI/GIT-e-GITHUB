@@ -24,3 +24,25 @@ Em outras palavras:
 5. Verifique a instalação:
    ```bash
    git --version
+
+## ⚙️ Configurações Básicas do Git
+
+Após instalar o Git, é importante configurar seu nome e e-mail, que ficam registrados em cada commit.
+
+```bash
+# Definir nome do usuário
+git config --global user.name "Seu Nome"
+
+# Definir e-mail do usuário
+git config --global user.email "seuemail@exemplo.com"
+
+# Verificar todas as configurações
+git config --list
+````
+Após isso irei apresentar alguns conceitos importantes sobre o GIT.
+
+- Branch: Branch é o nome técnico quando nos referimos a linha da versão do seu código, cada uma possui um nome, dado por você ou pelo líder do projeto. A Branch **Main/Master**, geralmente representam a linha de código real, onde o aplicativo realmente está rodando em funcionamento, a Branch DEV é onde o aplicativo ainda recebe alterações. Tudo depende de como o projeto irá funcionar.
+
+- Commits: Os commits são basicamente, uma declaração da alteração que você fez, pegando um exemplo bem exótico, quando alguém tem um filho, para confirmar que ele existe, é necessário você precisa registrar ele, assim é o código. Qualquer alteração realizada só irá poder ir para a branch dev ou main, se você realizar um commit.
+   - Cada commit possui um HASH, o HASH é o CPF daquele commit, se 2 arquivos tiverem na mesma versão mas tiverem HASH diferentes, eles não são iguais, além disso, o HASH é o identificador/rastreador daquele commit.
+- Staged: O Stage, é onde as alterações irão ficar em uma fila de espera, podendo serem desfeitos ou aceitos, após você registralos ( fazer um commit ) eles irão sair do estado de staged, o mesmo irá acontecer se forem excluídos. 
